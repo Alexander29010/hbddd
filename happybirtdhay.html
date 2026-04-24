@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sayang ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 24px;
+            margin: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .heart {
+            font-size: 80px;
+            animation: pulse 1s infinite;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 15px;
+            background: white;
+            color: #ff4b5c;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff4b5c;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .hidden-message {
+            display: none;
+            font-size: 28px;
+            margin-top: 30px;
+            color: yellow;
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎉 Happy Birthday Sayang 🎂</h1>
+        <div class="heart">❤️</div>
+        <p>
+             Semoga panjang umur, sehat selalu, dan semua impianmu tercapai.  
+             Berbakti sama papah ya sayang, selalu sayang sama aku juga ya.Semoga rezekimu selalu lancar, dan kamu segera mendapatkan pekerjaan yang layak
+             Terima kasih sudah hadir dan menjadi bagian terindah dalam hidupku ❤️<br><br>
+
+             Nanti kalau buka kado, jangan lihat dari beberapa barangnya ya,  
+            tapi lihat dari seberapa besar effort aku untuk kamu ❤️
+            
+        </p>
+
+        <button onclick="showMessage()">Klik Pesan Spesial 💌</button>
+
+        <div class="hidden-message" id="specialMessage">
+    Aku sayang kamu hari ini, besok, dan selamanya ❤️
+</div>
+
+<style>
+.hidden-message {
+    display: none;
+    font-size: 28px;
+    margin-top: 30px;
+    color: #ff4b5c; /* ganti warna di sini */
+    animation: fadeIn 2s ease-in-out;
+}
+</style>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("specialMessage").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
